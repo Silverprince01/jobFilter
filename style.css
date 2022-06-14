@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #effafa;
+  position: relative;
+}
+
+header {
+  background: url("images/bg-header-desktop.svg"), #5ba4a4;
+  height: 150px;
+  width: 100%;
+}
+
+main {
+  margin-top: 50px;
+  padding: 30px 90px;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+
+main .search {
+  display: none;
+}
+
+main .search2 {
+  width: 100%;
+  min-height: 50px;
+  background-color: white;
+  top: 5%;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 8px 10px -4px #5ba4a4;
+          box-shadow: 0 8px 10px -4px #5ba4a4;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .search2 .searchContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .search2 .searchContent .filter {
+  margin: 0 0 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 25px;
+  background-color: #eef6f6;
+}
+
+main .search2 .searchContent .filter .text {
+  padding: 0px 5px 10px 5px;
+  font-size: 20px;
+}
+
+main .search2 .searchContent .filter .cancel {
+  height: 25px;
+  width: 15px;
+  background-color: #5ba4a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .search2 .searchContent .filter .cancel:hover {
+  background-color: black;
+}
+
+main .search2 .searchContent .filter .cancel img {
+  height: 10px;
+  width: 10px;
+}
+
+main .search2 .clear {
+  cursor: pointer;
+}
+
+main .search2 .clear:hover {
+  text-decoration: underline;
+}
+
+main .whole {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .whole .card {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 8px 10px -4px #5ba4a4;
+          box-shadow: 0 8px 10px -4px #5ba4a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+main .whole .card .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .whole .card .first .midDiv {
+  margin-left: 40px;
+  width: 70%;
+}
+
+main .whole .card .first .midDiv .companyName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+main .whole .card .first .midDiv .companyName p {
+  color: #5ba4a4;
+}
+
+main .whole .card .first .midDiv .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #7b8e8e;
+}
+
+main .whole .card hr {
+  display: none;
+}
+
+main .whole .card .stack {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .whole .card .stack button {
+  background-color: #eef6f6;
+  color: #5ba4a4;
+  border: none;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main .whole .card .stack button:hover {
+  background-color: #5ba4a4;
+  color: white;
+}
+
+main .whole .card .checked {
+  display: none;
+}
+
+main .whole .featued {
+  background-color: blue;
+}
+
+@media only screen and (max-width: 888px) {
+  main {
+    padding: 20px 60px;
+  }
+  main .whole .card {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    padding: 10px 40px;
+  }
+  main .whole .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+  main .whole .card .first {
+    width: 100%;
+  }
+  main .whole .card .first img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -10%;
+  }
+  main .whole .card .first .midDiv {
+    width: 100%;
+    margin-left: 0;
+  }
+  main .whole .card .first .midDiv .companyName {
+    margin-top: 20px;
+  }
+  main .whole .card hr {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+  }
+  main .whole .card .stack {
+    width: 100%;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  main .whole .card .stack button {
+    margin: 0 0 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

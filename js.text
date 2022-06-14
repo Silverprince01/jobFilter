@@ -1,0 +1,15 @@
+let target = e.target.innerHTML;
+        compareArray.push(target);
+        let finalArray = [...new Set(compareArray)];
+        console.log(finalArray);
+
+        let loopcard = card.forEach((car) => {
+          console.log(car);
+          let arr = Array.from(car.lastElementChild.children);
+          
+          arr.forEach((ar)=>{
+            if (finalArray.includes(!ar.innerHTML)) {
+              console.log("graktung");
+            }
+          })
+        });
