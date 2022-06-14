@@ -10,7 +10,6 @@ const Json = async () => {
   const data = await resp.json();
   return data;
 };
-//looping through the whole json data to display it
 
 //template for each card
 
